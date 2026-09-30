@@ -1,0 +1,12 @@
+[project]
+name = "kiro-token-saver"
+version = "0.1.0"
+description = "Deterministic terminal-output compression for Kiro agents"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+
+[project.scripts]
+token-saver = "kiro_token_saver.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["kiro_token_saver*"]
